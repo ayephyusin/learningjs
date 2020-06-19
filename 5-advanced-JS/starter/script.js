@@ -33,7 +33,7 @@ console.log(mark.lastName);
 */
 
 //object create
-var personProto = {
+/*var personProto = {
     calculateAge : function(){
         console.log(2016 - this.yearOfBirth);
     }
@@ -49,8 +49,45 @@ var jane = Object.create(personProto,{
     name :{value : 'Jane'},
     yearOfBirth : { value : 1969},
     job :{ value :'designer'}
-});
+});*/
 
+
+//primitives 
+var a = 23;
+var b = a;
+a = 46;
+console.log(a);
+console.log(b);
+
+
+//objects 
+var obj1 = {
+    name :'John',
+    age : 26
+}
+
+var obj2 = obj1;
+obj1.age = 30;
+console.log(obj1.age);
+console.log(obj2.age);
+
+
+// functions
+var age = 27;
+var obj ={
+    name :'Jonas',
+    city : 'Lisbon'
+};
+
+function change(a,b){
+    a =38 ;
+    b.city =' San francisco';
+}
+
+change(age,obj);
+
+console.log(age);
+console.log(obj.city);
 /*
 --- Let's build a fun quiz game in the console! ---
 
