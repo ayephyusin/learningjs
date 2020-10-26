@@ -12,7 +12,7 @@ var scores, roundScore, activePlayer, dice;
 
 init();
 
-
+///eeeeee
 document.querySelector('.btn-roll').addEventListener('click',function(){
 
     //1. Random number
